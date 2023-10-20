@@ -1,12 +1,10 @@
-package jsp;
-
 <%@ page import="java.sql.*" %>
 
 <html>
 <body>
 
     <%
-        final String DB_NAME = "beverage";
+        final String DB_NAME = "beverages";
         final String USER = "root";
         final String PASS = "";
         final String DB_URL = "jdbc:mysql://localhost:3306/" + DB_NAME;
@@ -19,7 +17,7 @@ package jsp;
             connection = DriverManager.getConnection(DB_URL, USER, PASS);
             System.out.println("Connection Successful.");
         } catch (Exception e) {
-            System.out.println("ERROR: Connection to database failed!!!");
+            System.out.println("ERROR: could not connect to database!");
             e.printStackTrace();
         }
 
