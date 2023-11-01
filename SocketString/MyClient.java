@@ -16,7 +16,7 @@ public class MyClient {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             String serverResponse = in.readLine();
 
-            System.out.println("Server response: " + serverResponse);
+            System.out.println ("Server response: " + serverResponse);
 
             socket.close();
         } catch (IOException e) {
